@@ -3,9 +3,13 @@ import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 import Image from "next/image";
 import Logo from '@components/assets/logo/travophila.png'
+import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const {data : session} =useSession();
+  console.log(session);
+  
 
   const menuItems = [
     "Home",
@@ -28,7 +32,7 @@ export default function Header() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Tours
@@ -39,11 +43,7 @@ export default function Header() {
             Treks
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Places
-          </Link>
-        </NavbarItem>
+    
        
         <NavbarItem>
           <Link color="foreground" href="#">
@@ -55,11 +55,9 @@ export default function Header() {
             Expeditions
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Camping
-          </Link>
-        </NavbarItem>
+        
+     
+       
 
       </NavbarContent>
       <NavbarContent justify="end">
@@ -71,11 +69,16 @@ export default function Header() {
             Sign Up
           </Button>
         </NavbarItem> */}
-         {/* <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-             Call us: 8448948112
+        {(session && session.user) ? <>{session.user.name} <NavbarItem>
+          <Button as={Link} onClick={()=>signOut()} color="secondary" href="#" variant="flat">
+          Sign out
           </Button>
-        </NavbarItem> */}
+        </NavbarItem></> :<NavbarItem>
+          <Button as={Link} onClick={()=>signIn()} color="secondary" href="#" variant="flat">
+          Sign In
+          </Button>
+        </NavbarItem> }
+        
             <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"

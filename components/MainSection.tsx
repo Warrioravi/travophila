@@ -12,9 +12,9 @@ const MainSection = () => {
   }
     
     return (
-      <div className="relative w-full h-[80vh] bg-cover bg-center flex justify-center items-center transition duration-150 ease-in-out text-white" style={{ backgroundImage: `url('/images/background-${bgImg}.jpg')` }}>
-        <div className="bg-black bg-opacity-60 p-10 rounded-lg text-center">
-          <h1 className="text-2xl md:text-5xl font-bold leading-tight my-6 font-mono">Your Gateway to  Himalayan Adventures</h1>
+      <div className="relative w-full h-[50vh] bg-cover bg-center flex justify-center items-center  text-white" style={{ backgroundImage: `url('/images/background-${bgImg}.jpg')` }}>
+        <div className="bg-black bg-opacity-50 p-10 rounded-lg text-center">
+          <h1 className="text-4xl md:text-7xl font-bold leading-tight my-6 rajdhani-bold">Your Gateway to  Himalayan Adventures</h1>
          
           <SearchArea/>
         </div>

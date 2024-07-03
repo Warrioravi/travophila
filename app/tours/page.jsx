@@ -6,4 +6,4 @@ const ToursHomePage = () => {
   )
 }
 
-export default TourHomePage
+export default TourHomePage;

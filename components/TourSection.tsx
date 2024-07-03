@@ -39,7 +39,7 @@ const TourSection = () => {
   return (
     <div className="flex justify-center">
       {/* <h2 className="text-4xl font-bold text-center mb-12">Our Tours</h2> */}
-      <div className="grid py-12  gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 md:px-8 lg:px-16 lg:max-w-[1536px]">
+      <div className="grid py-12  gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 md:px-8 lg:px-16 lg:max-w-[1286px]">
         {tours.map((tour, index) =>{
             return <>
                    <Card

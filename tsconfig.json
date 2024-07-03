@@ -21,6 +21,6 @@
       "@components/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/SearchIcon.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/SearchIcon.jsx", "components/EnquiryForm.jsx", "components/SwipeableSection.jsx"],
   "exclude": ["node_modules"]
 }

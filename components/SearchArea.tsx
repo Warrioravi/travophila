@@ -18,7 +18,7 @@ export default function SearchArea() {
       inputProps={{
         classNames: {
           input: "ml-1",
-          inputWrapper: "h-[48px]",
+          inputWrapper: "h-[48px] bg-white/80",
         },
       }}
       listboxProps={{

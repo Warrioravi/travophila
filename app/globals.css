@@ -1,64 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './../node_modules/swiper/swiper-bundle.min.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-.exo-2-100{
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-.exo-2-200{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-  }
-  .exo-2-300{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
-  .exo-2-400{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .exo-2-500{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .exo-2-600{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     font-style: normal;
   }
-  .exo-2-700{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
-  .exo-2-800{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
     font-style: normal;
   }
-  .exo-2-900{
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
+  .font-rajdhani{
+    font-family: "Rajdhani", sans-serif;
   }
+  
+
+
+
